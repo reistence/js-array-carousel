@@ -42,7 +42,7 @@ nextBtn.addEventListener("click", function () {
     console.log(items[sliderCurrentPosition]);
   }
   console.log(sliderCurrentPosition);
-  if (sliderCurrentPosition >= imgArray.length - 1) {
+  if (sliderCurrentPosition >= imgArray.length) {
     // remove active from current img
     items[sliderCurrentPosition].classList.remove("active");
     // bring back sliderCurrentPosition to 0
@@ -67,4 +67,14 @@ prevBtn.addEventListener("click", function () {
     items[sliderCurrentPosition].classList.add("active");
     console.log(items[sliderCurrentPosition]);
   }
+  //   if ((sliderCurrentPosition = 0)) {
+  //     // remove active from current img
+  //     items[sliderCurrentPosition].classList.remove("active");
+  //     // increase sliderCurrentPosition by 1
+  //     sliderCurrentPosition = 1;
+
+  //     // add active to the new img
+  //     items[sliderCurrentPosition].classList.add("active");
+  //     console.log(items[sliderCurrentPosition]);
+  //   }
 });
