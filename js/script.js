@@ -32,7 +32,7 @@ const nextBtn = document.getElementById("next");
 // next btn
 nextBtn.addEventListener("click", function () {
   console.log(sliderCurrentPosition);
-  if (sliderCurrentPosition < imgArray.length - 1) {
+  if (sliderCurrentPosition < imgArray.length) {
     // remove active from current img
     items[sliderCurrentPosition].classList.remove("active");
     // increase sliderCurrentPosition by 1
@@ -41,15 +41,17 @@ nextBtn.addEventListener("click", function () {
     items[sliderCurrentPosition].classList.add("active");
     console.log(items[sliderCurrentPosition]);
   }
+  console.log(sliderCurrentPosition);
   if (sliderCurrentPosition >= imgArray.length - 1) {
     // remove active from current img
     items[sliderCurrentPosition].classList.remove("active");
     // bring back sliderCurrentPosition to 0
-    sliderCurrentPosition = 1;
+    sliderCurrentPosition = 0;
     // add active to the new img
     items[sliderCurrentPosition].classList.add("active");
     console.log(items[sliderCurrentPosition]);
   }
+  console.log(sliderCurrentPosition);
 });
 
 // prev btn
