@@ -29,16 +29,20 @@ img {
 .items-container {
   width: 100%;
   position: relative;
+  height: 500px;
 }
 
 .item {
   width: 100%;
+  display: none;
+  height: 100%;
 }
 
 .item img {
   /* height: 100%; */
   width: 100%;
   object-fit: cover;
+  height: 100%;
 }
 
 .items-container button {
@@ -46,7 +50,8 @@ img {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(240, 240, 240, 0.2);
-  color: rgba(240, 240, 240, 0.2);
+  /* color: rgba(240, 240, 240, 0.2); */
+  color: black;
   border: none;
   padding: 0.2em 0.5em;
   font-size: 2rem;
