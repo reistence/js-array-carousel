@@ -39,27 +39,6 @@ const nextBtn = document.getElementById("next");
 // next btn
 nextBtn.addEventListener("click", function () {
   console.log(sliderCurrentPosition);
-  //   // remove active from current img
-  //   items[sliderCurrentPosition].classList.remove("active");
-  //   if (sliderCurrentPosition < imgArray.length - 1) {
-  //     // increase sliderCurrentPosition by 1
-  //     sliderCurrentPosition++;
-  //     // add active to the new img
-  //     items[sliderCurrentPosition].classList.add("active");
-  //     console.log(items[sliderCurrentPosition]);
-  //   }
-  //   console.log(sliderCurrentPosition);
-
-  //   if (sliderCurrentPosition >= imgArray.length - 1) {
-  //     // remove active from current img
-  //     items[sliderCurrentPosition].classList.remove("active");
-  //     // bring back sliderCurrentPosition to 0
-  //     sliderCurrentPosition = 0;
-  //     // add active to the new img
-  //     items[sliderCurrentPosition].classList.add("active");
-  //     console.log(items[sliderCurrentPosition]);
-  //   }
-  //   console.log(sliderCurrentPosition);
 
   items[sliderCurrentPosition].classList.remove("active");
   thumbImg[sliderCurrentPosition].classList.remove("active-thumb");
@@ -86,25 +65,4 @@ prevBtn.addEventListener("click", function () {
   }
   items[sliderCurrentPosition].classList.add("active");
   thumbImg[sliderCurrentPosition].classList.add("active-thumb");
-
-  //   if (sliderCurrentPosition > 0) {
-  //     // remove active from current img
-  //     items[sliderCurrentPosition].classList.remove("active");
-  //     // increase sliderCurrentPosition by 1
-  //     sliderCurrentPosition--;
-
-  //     // add active to the new img
-  //     items[sliderCurrentPosition].classList.add("active");
-  //     console.log(items[sliderCurrentPosition]);
-  //   }
-  //   if ((sliderCurrentPosition = 0)) {
-  //     // remove active from current img
-  //     items[sliderCurrentPosition].classList.remove("active");
-  //     // increase sliderCurrentPosition by 1
-  //     sliderCurrentPosition = imgArray - length - 1;
-
-  //     // add active to the new img
-  //     items[sliderCurrentPosition].classList.add("active");
-  //     console.log(items[sliderCurrentPosition]);
-  //   }
 });

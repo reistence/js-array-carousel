@@ -54,9 +54,10 @@ body {
   height: 1000px;
   position: relative;
 }
-#thumbnails > img {
+.thumb-img {
   object-fit: cover;
   height: calc(1000px / 5);
+  opacity: 0.5;
 }
 
 #thumbnails button {
@@ -70,6 +71,7 @@ body {
   padding: 0.2em 0.5em;
   font-size: 2rem;
   width: 100%;
+  z-index: 999;
 }
 
 #thumbnails button:hover {
@@ -90,6 +92,7 @@ body {
 
 .active-thumb {
   border: 1px solid lightskyblue;
+  opacity: 1;
 }
 
 .hidden {
