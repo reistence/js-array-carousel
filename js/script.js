@@ -66,3 +66,20 @@ prevBtn.addEventListener("click", function () {
   items[sliderCurrentPosition].classList.add("active");
   thumbImg[sliderCurrentPosition].classList.add("active-thumb");
 });
+
+//THUMBNAIL IMGS CLICKABLE
+// ITERATE ON THUMBIMG LIST
+for (let i = 0; i < thumbImg.length; i++) {
+  const thisThumbImg = thumbImg[i];
+  //ON EACH ITERATION ADD EVENTLISTENER
+  thisThumbImg.addEventListener("click", function () {
+    //remove active
+    items[sliderCurrentPosition].classList.remove("active");
+    thumbImg[sliderCurrentPosition].classList.remove("active-thumb");
+    // merge the index value
+    sliderCurrentPosition = i;
+    // add active
+    items[sliderCurrentPosition].classList.add("active");
+    thumbImg[sliderCurrentPosition].classList.add("active-thumb");
+  });
+}
